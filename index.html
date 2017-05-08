@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>test</title>
+    </head>
+    <body>
+        <script charset="utf-8" type="text/javascript">
+            var myarr = [3, 5, "Dojo", "rocks", "Micheal", "Sensei"];
+            for(var i in myarr ){
+                console.log(myarr[i]);
+            }
+            myarr.push(100); // pushes 100 into arr
+            console.log(myarr)
+
+            myarr.push("hello", "world", "coding is fun") //pushed words into arr
+            console.log(myarr)
+
+            for(var i = 0; i < 501; i++){ // adds up the sums
+              var sum = 0;
+              sum += i;
+            }
+
+            // finds the min in the arr
+            var arr = [1, 5, 90, 25, -3, 0]
+            for(var i = 0; i < arr.length; i++){
+              if(arr[i] < arr[i+1]){
+                var min = i;
+                min = arr[i]
+              }
+            }
+            console.log(min)
+
+            // finds the avg
+            var arr = [1, 5, 90, 25, -3, 0];
+            for(var i = 0; i < arr.length; i++){
+              avg = arr[0];
+              if(avg < arr[i]){
+                max = arr[i]
+              }
+            }
+            console.log(max)
+            //prints the each key value pair
+            var me = {
+              name : 'Charles',
+              age: 22,
+              profesion: 'coder',
+              favorite_language: 'JavaScript',
+              dojo: 'San Jose'
+            }
+            for(var key in me){
+              console.log(me[key])
+            }
+        </script>
+    </body>
+</html>
